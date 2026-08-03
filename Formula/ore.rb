@@ -2,28 +2,28 @@
 class Ore < Formula
   desc "Coding agent for the terminal"
   homepage "https://github.com/core-editor/ore"
-  version "0.146.0"
+  version "0.146.1"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.0/codex-package-aarch64-apple-darwin.tar.gz"
-      sha256 "088a8401f0e321e13c5a203ce3bb839c3ccad08ddb66632f11dca5e2bd068bee"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.1/codex-package-aarch64-apple-darwin.tar.gz"
+      sha256 "508fe059c85510a12d0eaab5fc3abf177a01d8904fcdbba83c6e75132dea6e6a"
     end
     on_intel do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.0/codex-package-x86_64-apple-darwin.tar.gz"
-      sha256 "2196efcfa763fa5d9448b1d587a7a56201537a6dbfbfff0a7f77dd2be28ed197"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.1/codex-package-x86_64-apple-darwin.tar.gz"
+      sha256 "3dfeccfd94c3966e183cb8988ab2e67eeb0a14c51f126b627b0cd5a5c531aca6"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.0/codex-package-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "4b171242ad653535eaef1112593b350aeef50b570b850138972a5af5e1121e28"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.1/codex-package-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "01e2a3eaec958604549706651f2d7054c9233d24b52282bdf987325640c5e305"
     end
     on_intel do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.0/codex-package-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "06060bfd564cbea0eadff90e6f3e4157516fc175f7198ef039998eb4b3638722"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.1/codex-package-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "e07e8b378f695bad7aa7888c0bf39732a4f5633fe92eef6fba0acf225e410aa8"
     end
   end
 
@@ -35,6 +35,6 @@ class Ore < Formula
   end
 
   test do
-    assert_match version.to_s.sub(/-ore\.\d+$/, ""), shell_output("#{bin}/ore --version")
+    assert_match version.to_s, shell_output("#{bin}/ore --version")
   end
 end
