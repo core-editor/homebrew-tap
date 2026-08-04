@@ -2,28 +2,28 @@
 class Ore < Formula
   desc "Coding agent for the terminal"
   homepage "https://github.com/core-editor/ore"
-  version "0.146.3"
+  version "0.146.4"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.3/codex-package-aarch64-apple-darwin.tar.gz"
-      sha256 "bd1b3831f01902098655c25b20c183b5ceb01495fcf5671feb2a697581bab4fc"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.4/codex-package-aarch64-apple-darwin.tar.gz"
+      sha256 "ffdb7407a4a53a04275a936f0d1c55c74ee4c044c2c028626b80af7606d79396"
     end
     on_intel do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.3/codex-package-x86_64-apple-darwin.tar.gz"
-      sha256 "ffbb938c790d3f787f90b6cda30446b5500237a96c30e06ce64d678684558ee0"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.4/codex-package-x86_64-apple-darwin.tar.gz"
+      sha256 "4ad6c818c5089d9e77b69d0c5147e94d38c376eff274a0cb0b7b274ac261a7d1"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.3/codex-package-aarch64-unknown-linux-musl.tar.gz"
-      sha256 "569822a05ee31834f0422ba272b850d7e0763f405d47d6afc561df6c54b5f832"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.4/codex-package-aarch64-unknown-linux-musl.tar.gz"
+      sha256 "3826399edf61910b3f76a563c77086dd51a5757306e0e05f9b8a38cce1b4c98f"
     end
     on_intel do
-      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.3/codex-package-x86_64-unknown-linux-musl.tar.gz"
-      sha256 "7547f0bbd31a22212e2340d4446e7eeaecb334eed01354d2083eeb6b014291af"
+      url "https://github.com/core-editor/ore/releases/download/ore-v0.146.4/codex-package-x86_64-unknown-linux-musl.tar.gz"
+      sha256 "d50cde61cac04415fc05af26b8587a137a2c98dc8fecf17efb3511ce980a67e3"
     end
   end
 
